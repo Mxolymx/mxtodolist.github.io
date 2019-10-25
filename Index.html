@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Work TO-DO List</title>
+</head>
+
+
+<body>
+    <div id="container">
+    <h1>|       WORK TO DO LIST       |</h1>
+    <p id="first">Enter text into the input field to add items to your list<span id="char-limit">(max.28 characters)</span>    </p>
+    <p id="second">Click the item to mark it as complete.</p>
+    <p id="third">Click the "X" to remove the item from your list</p>
+
+    <!-- Add new item -->
+    
+        <div id="col-12">
+        <input id="userInput" type="text" placeholder="New item..." maxlength="28">
+        <button id ="enter"></i></button>
+        
+
+
+        <!-- Error modal -->
+        <div id="errormodal" class="modal">
+            <div class="modalcontent">
+                <span> <button id="closebtn">&times;</button> </span>
+                <p>Textfield is empty,input text to add items to your to do list</p>
+            </div>
+        </div>
+
+        <!-- Empty List -->
+         <div class="listItems ">
+             <ul class="col-12 offset-0 col-sm-8 offset-sm-2">
+                 
+             </ul>
+        
+    </div>
+         <!-- footer -->
+         <div id="footer">
+         <p>&copy;2019 Mx-IT Co.All Rights Reserved
+            </p>
+         </div>
+</body>
+
+<script src="JS/main.js"></script>
+</html>
